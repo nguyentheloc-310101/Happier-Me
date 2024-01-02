@@ -3,9 +3,6 @@ import { Button } from '@/components/ui';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Button className="">test shadcn ui</Button>
-      <TableDemo />
-    </main>
+    <div className="w-[1512px] h-[4154.12px] bg-white flex-col justify-start items-start inline-flex"></div>
   );
 }
