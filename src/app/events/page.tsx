@@ -1,7 +1,19 @@
-import React from 'react';
+import {
+  CommunityActivityBuild,
+  Galleries,
+  HeroSectionEvent,
+  OurEvents,
+} from '@/components/events';
 
 const EventPage = () => {
-  return <div>EventPage</div>;
+  return (
+    <>
+      <HeroSectionEvent />
+      <CommunityActivityBuild />
+      <OurEvents />
+      <Galleries />
+    </>
+  );
 };
 
 export default EventPage;

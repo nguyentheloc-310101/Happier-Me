@@ -12,7 +12,7 @@ export const HeroLandingPage = () => {
         alt="Picture of the author"
       />
       <div className="absolute top-[10%] left-[10%]">
-        <div className="w-[1320px] h-[414px] flex-col justify-start items-start gap-16 inline-flex">
+        <div className="w-full h-[414px] flex-col justify-start items-start gap-16 inline-flex">
           <div className="w-[965px]">
             <span className="text-pink-50 text-7xl font-semibold font-['Spectral'] leading-[80px]">
               Creating a more positive, supportive learning environment that

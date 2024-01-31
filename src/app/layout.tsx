@@ -1,13 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-// Import necessary modules
+import { NavBar } from '@/components/layout/NavBar';
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import { Inter } from 'next/font/google';
-import { useEffect } from 'react'; // Import useEffect
 import './globals.css';
-import { logo, navigationHeader } from '@/constant';
-import { Button } from '@/components/ui';
-import { ArrowLongRightIcon } from '@heroicons/react/16/solid';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,39 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <div>
-      <div className="sticky top-0 z-[999] flex py-[28px] px-[64px] bg-[white] items-center justify-between">
-        <div className="flex items-center justify-center gap-[16px]">
-          <Image
-            src={logo}
-            alt="Logo happier"
-            width={255}
-            height={100}
-            className="object-contain"
-          />
-          <div className="flex gap-[48px]">
-            {navigationHeader.map((item, index) => (
-              <div
-                className="text-[#2D2016] rounded-[45px] px-[24px] py-[10px] font-bold text-[20px] leading-normal cursor-pointer hover:text-[#4e453ffe] hover:bg-[#AFD8E6]"
-                key={index}>
-                {item?.name}
-              </div>
-            ))}
-          </div>
-        </div>
-        <div>
-          <Button
-            className="w-auto"
-            // icon={<ArrowLongRightIcon />}
-          >
-            Login
-          </Button>
-        </div>
-      </div>
-      <div className="bg-[#fcf3f8;]">{children}</div>
+      <NavBar />
+      <div className="w-full bg-[#fcf3f8;]">{children}</div>
       <div>
         <div className="w-full h-[493.12px] px-16 pt-16 pb-24 bg-stone-800 justify-between items-start inline-flex">
           <div className="w-[500px] self-stretch flex-col justify-between items-start inline-flex">
             <img
+              alt=""
               className="w-[500px] h-[131.43px]"
               src="https://ucarecdn.com/725ff762-e4aa-4032-8c5a-818c541f48a6/-/format/auto/-/quality/smart_retina/"
             />
@@ -65,10 +34,12 @@ export default function RootLayout({
             </div>
             <div className="w-[500px] justify-start items-center gap-10 inline-flex">
               <img
+                alt=""
                 className="w-[257.30px] h-10"
                 src="https://ucarecdn.com/1bac50af-fcc9-4d9a-9205-899cc178100a/-/format/auto/-/quality/smart_retina/"
               />
               <img
+                alt=""
                 className="w-[132.18px] h-[50px]"
                 src="https://ucarecdn.com/5a748530-e097-4d7d-ac5e-199ec36a0d2d/-/format/auto/-/quality/smart_retina/"
               />
