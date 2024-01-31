@@ -65,7 +65,31 @@
     --ring: 212.7 26.8% 83.9%;
   }
 }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+* {
+  box-sizing: border-box;
+  /* background-color: #fcf3f8; */
+  color: #2d2016;
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  max-width: 1920px;
+}
 @layer base {
   * {
     @apply border-border;
@@ -74,3 +98,30 @@
     @apply bg-background text-foreground;
   }
 }
+
+/*what we offer*/
+.item-info-offer {
+  display: flex;
+  width: 748px;
+  min-height: 102px;
+  padding: 20px 144px 20px 48px;
+  justify-content: start;
+  align-items: center;
+  border-radius: 90px 0px 0px 90px;
+}
+.text-content-item-info-offer {
+  color: var(--black, #2d2016);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.title-what-we-offer {
+  font-family: Spectral;
+  font-size: 96px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 112px;
+}
+/*end-what-we-offer*/
