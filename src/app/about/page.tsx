@@ -8,12 +8,12 @@ import React from 'react';
 
 const AboutUsPage = () => {
   return (
-    <div>
+    <>
       <HeroSectionAboutUs />
       <WhyItAllStarted />
       <OurMission />
       <ThreePhases />
-    </div>
+    </>
   );
 };
 

@@ -11,13 +11,6 @@ type Props = {
 };
 
 export default function LayoutProvider({ children }: Props) {
-  const searchParams = useSearchParams();
-  const pathname = usePathname();
-
-  useEffect(() => {
-    NProgress.done();
-  }, [pathname, searchParams]);
-
   return (
     <ConfigProvider theme={themeConfig}>
       <AntdStyledRegistry>{children}</AntdStyledRegistry>
